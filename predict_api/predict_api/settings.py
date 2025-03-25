@@ -139,3 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+import os
+if os.environ.get('RAILWAY_ENVIRONMENT'):
+    DATABASES['default']['NAME'] = '/tmp/db.sqlite3'  # Railway ephemeral storage
