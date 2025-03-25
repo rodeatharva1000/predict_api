@@ -1,32 +1,17 @@
-# Build essentials
-setuptools>=58.0.0
-wheel>=0.40.0
-pip>=23.0.0
-
-# Core Django stack
+# Core dependencies
 Django==4.2.7
 djangorestframework==3.14.0
-django-cors-headers>=4.2.0  # Commonly needed for DRF APIs
-psycopg2-binary>=2.9.7  # PostgreSQL adapter
-whitenoise>=6.5.0  # Static files
 
-# Machine learning stack
+# Database (SQLite - included in Python, no extra package needed)
+
+# Production server
+gunicorn==21.2.0
+whitenoise==6.5.0  # For static files
+
+# Project-specific dependencies
 tensorflow>=2.16.0  # or tensorflow-cpu>=2.16.0
-keras>=2.13.0
-protobuf>=3.20.3  # Required by TensorFlow
-
-# Data processing
 numpy>=1.24.4
 pandas>=2.1.0
-scipy>=1.10.1
-scikit-learn>=1.3.0
 
 # Utilities
-python-dotenv>=1.0.0  # Environment variables
-gunicorn>=21.2.0  # Production server
-uvicorn>=0.23.2  # ASGI server (if using async)
-
-# Development-only packages (optional)
-# pytest>=7.4.0
-# pytest-django>=4.5.2
-# debugpy>=1.6.7
+python-dotenv>=1.0.0
