@@ -1,15 +1,8 @@
-# Core
 Django==4.2.7
 djangorestframework==3.14.0
-
-# Production
 gunicorn==21.2.0
 whitenoise==6.5.0
-
-# ML/AI
 tensorflow>=2.16.0
 numpy>=1.24.4
 pandas>=2.1.0
-
-# Utilities
 python-dotenv>=1.0.0
