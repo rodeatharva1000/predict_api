@@ -1,15 +1,16 @@
-# Core dependencies
+# Core
 Django==4.2.7
 djangorestframework==3.14.0
 
-# Database (SQLite - included in Python, no extra package needed)
+# Database
+sqlite3>=3.31.1  # Explicitly include SQLite (though usually bundled)
 
-# Production server
+# Production
 gunicorn==21.2.0
-whitenoise==6.5.0  # For static files
+whitenoise==6.5.0
 
-# Project-specific dependencies
-tensorflow>=2.16.0  # or tensorflow-cpu>=2.16.0
+# ML/AI
+tensorflow>=2.16.0
 numpy>=1.24.4
 pandas>=2.1.0
 
